@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install NPM dependencies
-      run: |
+      run: | 
         npm install --production --unsafe-perm
     - uses: sburris/dependency-check-action@master
       name: Analyze 3rd party dependencies
